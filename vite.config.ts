@@ -2,8 +2,8 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig({
-  base: "/El-Ras-Attorneys/",
+export default defineConfig(({ command }) => ({
+  base: command === "build" ? "/El-Ras-Attorneys/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
@@ -13,4 +13,4 @@ export default defineConfig({
   server: {
     port: 5173,
   },
-});
+}));
