@@ -25,6 +25,10 @@ function GoldForm() {
   );
 }
 
+/**
+ * Used only in the hero, as the brief calls for R3F "only where
+ * appropriate" — everywhere else relies on CSS/SVG for performance.
+ */
 export function HeroScene() {
   return (
     <Canvas camera={{ position: [0, 0, 4.2], fov: 42 }} dpr={[1, 1.75]}>

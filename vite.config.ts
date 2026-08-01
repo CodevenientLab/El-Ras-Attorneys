@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  base: "/El-Ras-Attorneys/",
   plugins: [react()],
   resolve: {
     alias: {
